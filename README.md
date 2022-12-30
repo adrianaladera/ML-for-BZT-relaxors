@@ -1,5 +1,5 @@
 # ML-for-BZT-relaxors
-This repository accompanies the paper "*Machine learning reveals memory of the parent phases in ferroelectric relaxors* $Ba(Ti_{1-x},Zr_x)O_3$". It utilizes K-means clustering and principal component analysis to unveil subtle phases of relaxor ferroelectrics in the family of solid solutions $Ba(Ti_{1-x},Zr_x)O_3$ (BZT).
+This repository accompanies the paper "*Machine learning reveals memory of the parent phases in ferroelectric relaxors* $Ba(Ti_{1-x},Zr_x)O_3$". It utilizes principal component analysis and $K$-means clustering to unveil subtle phases-- overlooked by the traditional thermodynamic approach-- of relaxor ferroelectrics in the family of solid solutions $Ba(Ti_{1-x},Zr_x)O_3$ (BZT).
   
   - dependencies: Python >= 3.0, Anaconda, Scikit Learn = 1.1.3
   
