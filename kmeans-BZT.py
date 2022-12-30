@@ -147,7 +147,7 @@ end_t = time.time()
 time_iter = end_t - start_t
 time_iter = time_iter % (24 * 3600)
 hour = time_iter // 3600
-time_iter %= 3600
+time_iter %= 3600 
 minutes = time_iter // 60
 time_iter %= 60
 
