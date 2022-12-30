@@ -32,7 +32,7 @@ This repository accompanies the paper "*Machine learning reveals memory of the p
    - `PCA-x`: the first principal component out of $M$ principal components
    - `PCA-y`: the second principal component out of $M$ principal components
 - `k$a$,pred`: if $\alpha$ is a $K$-value, then an integer label corresponding with potential values [0, $\alpha$] to the cluster prediction for a supercell is given
-- *k$\alpha$, x*: the "coordinate" in terms of the first principal component of the supercell with respect to its nearest centroid
+- *k*$\alpha$, *x*: the "coordinate" in terms of the first principal component of the supercell with respect to its nearest centroid
 - `k$\alpha$, y`: the "coordinate" in terms of the second principal component of the supercell with respect to its nearest centroid
 - `k$\alpha$, centx`: the centroid "coordinate" in terms of the first principal component 
 - `k$\alpha$, centy`: the centroid "coordinate" in terms of the second principal component 
