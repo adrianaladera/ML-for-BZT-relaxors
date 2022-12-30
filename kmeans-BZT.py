@@ -121,7 +121,7 @@ def kmeans(data, lookup, solver, n_comp, k_range, n_iter, n_tol, save_dir):
 # =============================================================================
 
 # list of concentrations, change according to temperature folders, electric field folders, etc.
-concentrations = ["0.15"]
+concentrations = ["0.00", "0.05", "0.10", "0.15", "0.20", "0.25"]
 start_t = time.time()
 for conc in concentrations:
     swag = "data_tables/BZT_C-{}_10K-450K_data.csv".format(conc)
