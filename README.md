@@ -22,20 +22,20 @@ This repository accompanies the paper "*Machine learning reveals memory of the p
  When running the workflow, a new directory for each concentration is created if it does not already exist. Each folder will produce two files, `k_value_selection.csv` and `kmeans_results.csv`. Below is an explanation for each of the key-value pairs listed under each resulting csv file.
  
  ### k_value_selection.csv
- - *k*: the $K$-value for a specific run of the $K$-means clustering algorithm
-  - *distortion*: the average distance of each point to their respective centroid
-   - *inertia*: the sum of the squared distances of each point to their respective centroid
+ - **k**: the $K$-value for a specific run of the $K$-means clustering algorithm
+  - **distortion**: the average distance of each point to their respective centroid
+   - **inertia**: the sum of the squared distances of each point to their respective centroid
  
  ### kmeans_results.csv
-  - *temperature*: temperature in Kelvin of a supercell (row)
-   - `cf_pattern`: for a dipole pattern outputed every 30,000 out of 300,000 MD steps, the integer number indicating which output is given for a supercell
-   - `PCA-x`: the first principal component out of $M$ principal components
-   - `PCA-y`: the second principal component out of $M$ principal components
-- `k$a$,pred`: if $\alpha$ is a $K$-value, then an integer label corresponding with potential values [0, $\alpha$] to the cluster prediction for a supercell is given
-- *k*$\alpha$, *x*: the "coordinate" in terms of the first principal component of the supercell with respect to its nearest centroid
-- `k$\alpha$, y`: the "coordinate" in terms of the second principal component of the supercell with respect to its nearest centroid
-- `k$\alpha$, centx`: the centroid "coordinate" in terms of the first principal component 
-- `k$\alpha$, centy`: the centroid "coordinate" in terms of the second principal component 
+  - **temperature**: temperature in Kelvin of a supercell (row)
+   - **cf_pattern**: for a dipole pattern outputed every 30,000 out of 300,000 MD steps, the integer number indicating which output is given for a supercell
+   - **PCA-x**: the first principal component out of $M$ principal components
+   - **PCA-y**: the second principal component out of $M$ principal components
+- **k**$a$,**pred**: if $\alpha$ is a $K$-value, then an integer label corresponding with potential values [0, $\alpha$] to the cluster prediction for a supercell is given
+- **k**$\alpha$, **x**: the "coordinate" in terms of the first principal component of the supercell with respect to its nearest centroid
+- **k**$\alpha$, **y: the "coordinate" in terms of the second principal component of the supercell with respect to its nearest centroid
+- **k**$\alpha$, **centx**: the centroid "coordinate" in terms of the first principal component 
+- **k**$\alpha$, **centy**: the centroid "coordinate" in terms of the second principal component 
  
  
  ## Disclaimer
