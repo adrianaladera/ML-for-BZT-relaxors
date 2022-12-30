@@ -29,7 +29,7 @@ This repository accompanies the paper "*Machine learning reveals memory of the p
  ### kmeans_results.csv
   - `temperature`: temperature in Kelvin of a supercell (row)
    - `cf_pattern`: for a dipole pattern outputed every 30,000 out of 300,000 MD steps, the integer number indicating which output is given for a supercell
-    - `PCA-x`: the first principal component out of $M$ principal components
+   - `PCA-x`: the first principal component out of $M$ principal components
    - `PCA-y`: the second principal component out of $M$ principal components
 - `k$\alpha$,pred`: if $\alpha$ is a $K$-value, then an integer label corresponding with potential values [0, $\alpha$] to the cluster prediction for a supercell is given
 - `k$\alpha$, x`: the "coordinate" in terms of the first principal component of the supercell with respect to its nearest centroid
