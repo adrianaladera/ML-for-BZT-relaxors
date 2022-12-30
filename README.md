@@ -18,6 +18,26 @@ This repository accompanies the paper "*Machine learning reveals memory of the p
 ## $K$-means clustering
  `kmeans-BZT.py` is an unsupervised learning program that utilizes the $K$-means clustering algorithm, an unsupervised algorithm that groups data into cluster groups without human input other than a $K$-value, which dictates how many clusters the algorithm should group the data points into. It accepts data as an $P \times N$ array, where $P$ is the number of samples and $N$ is the dimension, i.e. variables of each sample. In this case, $N=M$, where we input the PCA-reduced data set of size $P \times M$ into the $K$-means clustering algorithm.
  
+ ## Output
+ When running the workflow, a new directory for each concentration is created if it does not already exist. Each folder will produce two files, `k_value_selection.csv` and `kmeans_results.csv`. Below is an explanation for each of the key-value pairs listed under each resulting csv file.
+ 
+ ### k_value_selection.csv
+ - `k`: the $K$-value for a specific run of the $K$-means clustering algorithm
+  - `distortion`: the average distance of each point to their respective centroid
+   - `inertia`: the sum of the squared distances of each point to their respective centroid
+ 
+ ### kmeans_results.csv
+  - `temperature`: temperature in Kelvin of a supercell (row)
+   - `cf_pattern`: for a dipole pattern outputed every 30,000 out of 300,000 MD steps, the integer number indicating which output is given for a supercell
+    - `PCA-x`: the first principal component out of $M$ principal components
+   - `PCA-y`: the second principal component out of $M$ principal components
+- `k$\alpha$,pred`: if $\alpha$ is a $K$-value, then an integer label corresponding with potential values [0, $\alpha$] to the cluster prediction for a supercell is given
+- `k$\alpha$, x`: the "coordinate" in terms of the first principal component of the supercell with respect to its nearest centroid
+- `k$\alpha$, y`: the "coordinate" in terms of the second principal component of the supercell with respect to its nearest centroid
+- `k$\alpha$, centx`: the centroid "coordinate" in terms of the first principal component 
+- `k$\alpha$, centy`: the centroid "coordinate" in terms of the second principal component 
+ 
+ 
  ## Disclaimer
  All machine learning code for this paper was written using [Scikit-learn](https://scikit-learn.org/stable/). Learn more about [principal component analysis](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html) and [$K$-means clustering](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) here.
 
